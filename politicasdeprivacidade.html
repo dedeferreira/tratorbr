@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./links.css">
+    <link rel="shortcut icon" href="./imagens/faviconofc.png" type="image/x-icon">
+    <title>TratorBR</title>
+</head>
+<body>
+     <!-- HEADER -->
+     <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        
+        <div class="redessociais">
+            <a href="https://www.instagram.com/tratorbr.oficial/" target="_blank"><img src="./imagens/insta.png" alt="Instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=+5543988135681&text=Olá,%20estou%20interessado%20em%20falar%20com%20você" target="_blank"><img src="./imagens/whats.png" alt="WhatsApp"></a>
+        </div>
+        <div class="logo">
+           <a href="./index.html"><img src="./imagens/logo.png" alt="logoSite"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="hoverheader"><a href="#contato">Contato</a></li>
+                <li class="hoverheader"><a href="index.html#sobre">Sobre nós</a></li>
+                <div class="redesmenu" style="margin-left: 50px; margin-top: 5px;">
+                    <a href="#"><img src="./imagens/instabranco.png" alt="Instagram"></a>
+                    <a href="#"><img src="./imagens/whatsbranco.png" alt="Instagram" style="margin-left: 20px;"></a>
+                </div>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            const divRedesSociais = document.querySelector('.redessociais');
+            nav.classList.toggle('active');
+            divRedesSociais.classList.toggle('redessociais active');
+        }
+    </script> 
+<!-- FIM DO HEADER -->
+ <section class="termosdeuso">
+    <h1>Politicas de privacidade</h1>
+    <h2>Coleta de Dados</h2>
+    <p>Coletamos apenas as informações estritamente necessárias para oferecer uma experiência segura, personalizada e eficiente. Entre os dados coletados estão: nome, e-mail, localização e informações de navegação. O tratamento dos dados está em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD – Lei nº 13.709/2018).</p>
+
+    <h2>Uso das Informações</h2>
+    <p>As informações fornecidas são utilizadas exclusivamente para: Melhorar nossos serviços e funcionalidades; Facilitar a comunicação e conexão entre usuários; Enviar comunicações relevantes, sempre com sua autorização prévia.</p>
+
+    <h2>Compartilhamento de Dados</h2>
+    <p>Não compartilhamos seus dados com terceiros, exceto em casos de: Cumprimento de obrigação legal; Garantia do funcionamento técnico da plataforma, com parceiros que sigam os mesmos princípios de segurança e confidencialidade.</p>
+
+    <h2>Segurança</h2>
+    <p class="ultimo">Adotamos medidas técnicas e administrativas adequadas para proteger seus dados contra acessos não autorizados, alterações, divulgação ou destruição. Você pode, a qualquer momento, solicitar a exclusão ou correção de suas informações pessoais por meio do canal de contato disponível na plataforma.</p>
+ </section>
+
+<!-- CONTATO -->
+ <section id="contato">
+    <div class="fundocontato">
+        <div class="contato">
+            <h3>Contato</h3>
+            <p class="ppcontato">Está com dúvidas, sugestões ou quer saber mais sobre o App TratorBR? <br>Nosso time de especialistas está pronto para te atender.</p>
+            <p>Rua Drongo, 1540 - Sala 1002, Centro, Arapongas, PR, 86.700-145</p>
+            <a href="https://api.whatsapp.com/send?phone=+5543988135681&text=Olá,%20estou%20interessado%20em%20falar%20com%20você" target="_blank">
+                <div class="btnwhats">
+                    <img src="./imagens/whatsbranco.png" alt="WhatsApp">
+                    <p><strong>Chamar no WhatsApp</strong></p>
+                </div>
+            </a>
+        </div>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1234567890123!2d-51.4256789!3d-23.4198765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd123456789ab%3A0x123456789abcdef!2sRua%20Drongo%2C%201540%20-%20Sala%201002%2C%20Centro%2C%20Arapongas%20-%20PR%2C%2086700-145!5e0!3m2!1sen!2sbr!4v1697041234567!5m2!1sen!2sbr"
+                 width="100%"
+                height="100%"
+                style="border-radius:30px; "
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"> 
+            </iframe>
+            <!-- API -->
+        </div>
+    </div>
+ </section>
+
+ <!-- APP -->
+ <section class="app-section">
+    <div class="app-left">
+      <h4>TratorBR - APP</h4>
+      <p>Baixe agora e venha viver essa experiência<br>junto com a gente!!!</p>
+      <div class="download-buttons">
+        <a href="#">
+          <img src="./imagens/icons/logotipo-da-apple.png" alt="Apple Icon" style="margin-right:22px"/>
+          Baixar para IOS
+          
+        </a>
+        <a href="#">
+          <img src="./imagens/icons/simbolo-de-personagem-android.png" alt="Android Icon" />
+          Baixar para Android
+        </a>
+      </div>
+    </div>
+
+    <div class="app-middle">
+      <div class="checklist-box">
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Série e Ano</p></div>
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Avaliador</p></div>
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Maior Banco de Dados</p></div>
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Online & Offline</p></div>
+      </div>
+      <p>
+        Seja agricultor ou concessionário, o aplicativo TratorBR foi feito para tornar sua rotina mais simples, eficiente e digital. Chega de burocracia: com poucos cliques, você tem o controle que precisa para tomar decisões melhores no agronegócio.
+      </p>
+    </div>
+
+    <div class="app-right">
+      <img src="./imagens/icons/mokoupiphone.png" alt="App Mockup" />
+    </div>
+  </section> 
+
+ <!-- FOOTER -->
+<footer>
+    <div class="fundofooter">
+        <div class="linkum"><a href="./politicasdeprivacidade.html">Politicas de privacidade</a></div>
+        <div class="escrito"><p>Copyright © 2025. Todos os direitos reservados para TratorBR.</p></div>
+        <div class="linkdois"><a href="./termosdeuso.html">Termos de uso</a></div>
+    </div>
+</footer>
+
+
+</body>
+</html>

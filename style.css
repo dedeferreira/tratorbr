@@ -1,0 +1,787 @@
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* HEADER */
+header {
+    padding: 20px 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    font-size: 25px;
+    align-items: center;
+    gap: 7px;
+}
+
+.logo img{
+    width: 180px;
+    height: auto;
+    /* margin-top: px; */
+    margin-left: 70px;
+    
+}
+
+.hoverheader :hover{
+    color:#409535;
+    border-bottom: solid 2px #409535;
+    padding-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #15383E;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #15383E;
+    /* justify-content: end;
+    left: 0; */
+    margin-left: 10px;
+}
+
+.redessociais{
+    display: flex;
+    gap: 15px;
+    margin-left: 20px;
+    width: 150px 
+}
+.redessociais img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.redesmenu img{
+    width: 0px;
+    margin-left: -30px;
+}
+
+/* responsivos */
+@media (max-width: 1028px) {
+    header {
+        padding: 10px;
+    }
+    .menu-icon {
+        display: block; /* Mostra o ícone do menu */
+    }
+    nav ul {
+        display: none;
+        flex-direction: column; 
+        width: 100%;
+        position: absolute;
+        top: 80px; /* Ajuste conforme a altura do header */
+        left: 0;
+        background-color: #15383E;
+        padding: 10px 0 20px 0;
+        z-index: 1;
+        border-radius: 0 0 40px 40px;
+        align-items: flex-start;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px 0;
+        text-align: left;
+    } 
+    nav ul li a{
+        color: white;
+        margin: 20px;
+    }
+    .redessociais{
+        display: flex;
+        gap: 15px;
+        margin-left: 20px;
+        width: 0px 
+    }
+    .redessociais img{
+        width: 0px;
+        height: 0px;
+        cursor: pointer;
+    }
+    .redesmenu img{
+        width: 20px;
+        margin-top: 10px;
+    }
+    nav ul li .redesmenu{
+        display: flex;
+        margin-left: 20px;
+    }
+    .logo img {
+      margin-left: 50%;
+      width: 150px;
+    }
+} 
+
+@media (max-width: 1027px) {
+    .logo img {
+      margin-left: -110%;
+    }
+}
+
+@media (max-width: 820px) {
+    .logo img {
+      margin-left: -70%;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo img {
+      margin-left: -34%;
+    }
+} 
+/* FIM HEADER */
+
+/* INICIO FOOTER */
+.fundofooter {
+    background-color: #15383E;
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.linkum a{
+    cursor: pointer;
+    margin-left: 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.linkdois a{
+    cursor: pointer;
+    margin-right: 65px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* responsivos */
+@media (max-width: 1028px) {
+    .fundofooter {
+        display: block;
+        height: 140px;
+        text-align: center;
+        /* border-radius: 40px 40px 0 0; */
+    }
+    .linkdois{
+        margin-top: -70px;
+        margin-right: 0px;
+    }
+    .linkum{
+        padding-top: 15px;
+        margin-left: 0px;
+    }
+    .linkdois a{
+        margin-right: 0;
+    }
+    .linkum a{
+        margin-left: 0;
+    }
+    .escrito{
+        padding-top: 50px;
+        
+    }
+    .escrito p{
+        border-top: solid 1px white;
+        padding-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+} 
+@media (max-width: 410px) {
+
+    .linkdois{
+        margin-top: -80px;
+        margin-right: 0px;
+    }
+} 
+
+/*RECURSOS */
+.section-container { 
+    color: white;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 26px;
+    text-align: center; 
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 30px;
+    width: 40%;
+    text-align: left;
+    height: 180px;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+    
+}
+
+.card img{
+    width: 30px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+#card4{
+    color: white;
+    background-color: #15383E;
+}
+
+#card3 .img2{
+    width: 0px;
+    height: 0px;
+}
+
+#card3 .img3{
+    width: 0px;
+    height: 0px;
+}
+
+#card4 .img2{
+    width: 0px;
+    height: 0px;
+}
+
+#card4 .img3{
+    width: 0px;
+    height: 0px;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: 40%px;
+        height: 240px;
+    }
+    .section-title {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .menssagem{
+        width: 280px;
+        height: 255px;
+    }
+}
+@media (max-width: 832px) {
+    .card {
+        width: 75%;
+        height: 240px;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-title {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .menssagem{
+        width: 280px;
+        height: 255px;
+    }
+    .section-title h1{
+        font-size: 40px;
+    }
+    .section-title h2{
+        font-size: 28px;
+    }
+    #card3{
+        color: white;
+        background-color: #15383E;
+    }
+    #card4{
+        color: #15383E;
+        background-color: white;
+    }
+    .card img{ 
+        display: block;
+        margin: 0 auto; 
+        margin-bottom: 30px;
+    }
+    .card p{
+        text-align: center;
+    }
+    #card3 .img2{
+        width: 30px;
+        height: 30px;
+        margin-left: 50px;
+    }
+    #card3 .img1{
+        width: 0px;
+        height: 0px;
+    }
+    #card4 .img2{
+        width: 30px;
+        height: 30px;
+        margin-left: 50px;
+    }
+    #card4 .img1{
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media (max-width: 832px) {
+    #card3 .img2{
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-top: -20px;
+    }
+    #card4 .img2{
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-top: -20px;
+    }
+
+}
+/* FINAL RECURSOS */
+
+/* SOBRE NÓS */
+
+.container-sobre h2{
+    padding-left: 0px;
+    margin: 0px;
+    color: white;
+    font-family: Ethnocentric;
+    font-weight: normal;
+    font-size: 26px;
+    margin-top: 55px;
+    padding-top: 35px;
+}
+.container-sobre{
+    background-image: url('./imagens/imgFundo.png');
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 400px;
+    text-align: center;
+    /* padding: 60px; */
+    background-color: gray;
+}
+.conteudo-sobre{
+    background-color: rgba(21, 56, 62, 0.8); /* #15383E com 80% de opacidade */
+    color: white;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.conteudo-sobre p{
+    padding: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 19px;
+    font-weight: 200;
+}
+.conteudo-sobre img{
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 1028px) {
+    .container-sobre{
+        height: 100%;
+    }
+    .conteudo-sobre p{
+        padding: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+    }
+
+}
+
+
+
+/*2 TIPOS */
+.card-new h3{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.card-new-2 h3{
+    color: white;   
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.section-container-new { 
+    color: white;
+    text-align: center;
+}
+.section-title-new {
+    font-size: 26px;
+    text-align: center; 
+    margin-bottom: 25px;
+}
+.cards-container-new {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.card-new {
+    transition: all 0.3s ease;
+    background-image: url('./imagens/1.png');
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    width: 40%;
+    text-align: left;
+    height: 250px;
+    /* position: relative; */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+}
+.card-new:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.6); /* Aumenta a sombra ao passar o mouse */
+}
+
+.card-new-2:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.6); /* Aumenta a sombra ao passar o mouse */
+}
+.card-new-2 {
+    transition: all 0.3s ease;
+    background-image: url('./imagens/2.png');
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    width: 40%;
+    text-align: left;
+    height: 250px;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    font-size: 17px;
+
+}
+@media (max-width: 1200px) {
+    .card-new {
+        width: 40%;
+        height: 240px;
+    }
+    .card-new-2{
+        width: 40%;
+        height: 240px;
+    }
+    .section-title-new {
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 832px) {
+    .card-new {
+        width: 75%;
+        height: 200px;
+    }
+    .card-new-2{
+        width: 75%;
+        height: 200px;
+    }
+    .cards-container-new {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-title-new {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+
+/* FINAL 2 TIPOS */
+
+/* FUNDO LOJA */
+.fundoloja{
+    background-color: #15383E;
+    /* width: 100%; */
+    height: 260px;
+    text-align: center;
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 40px;
+    margin-bottom: 280px;
+}
+.fundoloja h1{
+    color: white;
+    font-size: 26px;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-weight: normal;
+
+}
+
+.fundoloja p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.imgsloja{
+    height: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.imgsloja img{
+    width: 170px;
+}
+
+.iphoneloja{
+    width: 800px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1028px) {
+    .fundoloja{
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 40px;
+        margin-bottom: 200px;
+        height: 230px;
+    }
+    .fundoloja h1{
+        font-size: 22px;
+    }
+    .fundoloja p{
+        font-size: 14px;
+    }
+    .imgsloja{
+        height: auto;
+        display: block;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+        flex-direction: column;
+    
+    }
+    .iphoneloja{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 790px) {
+    .fundoloja{
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 40px;
+        margin-bottom: 120px;
+    }
+    .iphoneloja{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 490px) {
+    .fundoloja{
+        margin-left: 30px;
+        margin-right: 30px;
+        border-radius: 40px;
+        margin-bottom: 120px;
+    }
+
+    .iphoneloja{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+/* SEPARADOR */
+.btnavaliar{
+    padding: 19px 20px;
+    background-color: #15383E;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.dale{
+    display: flex;
+}
+
+@media (max-width: 1028px) {
+    .btnavaliar{
+        font-size: 15px;
+        width: 150px;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: 10px;
+        text-decoration: underline;
+        margin-left: 0px;
+        margin-top: 40px;
+        margin-left: 20px;
+        font-weight: bolder;
+        margin: 0 auto;
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+    .dale{
+        display: block;
+    }
+  
+}
+
+
+.section-trator {
+    padding-left:60px ;
+    padding-right: 60px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    gap: 50px;
+    margin-top: 60px;
+    align-items: center;
+  }
+  .section-trator h1 {
+    text-align: start;
+    font-weight:lighter;
+    font-size: 34px;
+  }
+  .section-trator p {
+    color:#A3A1A1;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .logo-container h1{
+    font-size: 60px;
+    margin-left: 15px;
+  }
+  .phones img{
+    width: 100%;
+  }
+
+  /* Responsivo */
+  @media (max-width: 1028px) {
+    .section-trator {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 40px;
+        display: block;
+        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section-trator h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .logo-container h1{
+        font-size: 28px;
+        margin-left: 15px;
+    
+    }
+    .logo-container img{
+        width: 50px;
+    }
+    .logo-container{
+        justify-content:center ;
+    }
+    .phones img{
+        width: 400px;
+      }
+    
+  }
+  @media (max-width: 1027px) {
+    .section-trator {
+      flex-direction: column-reverse;
+    }
+  }
+  @media (max-width: 420px) {
+    .phones img {
+        width: 350px;
+    }
+}
+  

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./links.css">
+
+    <!-- LINK FAVICON -->
+    <link rel="shortcut icon" href="./imagens/faviconofc.png" type="image/x-icon">
+
+    <!-- TITULO DA PAGINA -->
+    <title>TratorBR</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        
+        <div class="redessociais">
+            <a href="https://www.instagram.com/tratorbr.oficial/" target="_blank"><img src="./imagens/insta.png" alt="Instagram"></a>
+            <a href="https://api.whatsapp.com/send?phone=+5543988135681&text=Olá,%20estou%20interessado%20em%20falar%20com%20você" target="_blank"><img src="./imagens/whats.png" alt="WhatsApp"></a>
+        </div>
+        <div class="logo">
+           <a href="./index.html"><img src="./imagens/logo.png" alt="logoSite"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="hoverheader"><a href="#contato">Contato</a></li>
+                <li class="hoverheader"><a href="#sobre">Sobre nós</a></li>
+                <div class="redesmenu" style="margin-left: 50px; margin-top: 5px;">
+                    <a href="#"><img src="./imagens/instabranco.png" alt="Instagram"></a>
+                    <a href="#"><img src="./imagens/whatsbranco.png" alt="Instagram" style="margin-left: 20px;"></a>
+                </div>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            const divRedesSociais = document.querySelector('.redessociais');
+            nav.classList.toggle('active');
+            divRedesSociais.classList.toggle('redessociais active');
+        }
+    </script> 
+<!-- FIM DO HEADER -->
+
+<!-- PIMEIRA PARTE -->
+<section class="section-trator">
+
+    <div class="text-content">
+
+        <div class="logo-container">
+            <img src="./imagens/fundo/logoefundo.png" alt="Logo Trator BR" class="logo">
+            <h1 style="margin-top: 0;">TratorBR</h1>
+        </div>
+
+      <h1>Voluptas fugit<br>sequi laudantium<br>reprehenderit</h1>
+
+      <p>Com o app TratorBR, agricultores e concessionários ganham uma nova <br>forma de se conectar, negociar, e gerenciar suas máquinas com <br> eficiência e agilidade. Tudo na palma da mão.</p>
+    </div>
+    
+    <div class="phones">
+   <img src="./imagens/fundo/iphone.png" alt="Tela App TratorBR Web"> 
+    </div>
+
+</section>
+
+<!-- FIM PRIMEIRA PARTE -->
+
+<!-- LOJAS DE APP -->
+ <SEction>
+    <div class="fundoloja">
+        <h1>Baixe agora</h1>
+        <p>Cique e baixe nas principais lojas.</p>
+        <div class="imgsloja">
+            <img src="./imagens/apple.png" alt="Baixe Agora na App Store">
+            <img src="./imagens/android.png" alt="Baixe Agora no Google Play">
+        </div>
+        <img src="./imagens/fundo/iphone15.png" alt="" class="iphoneloja">
+    </div>
+ </SEction>
+<!-- FIM DA LOJA DE APP  -->
+
+<!-- RECURSOS -->
+<section class="section-container">
+    <h1 class="section-title">Recursos</h1>
+    <div class="cards-container">
+        <div class="card" style="background-color:#15383E; color:#fff;">
+            <img src="./imagens/serieeanoBranco.png" alt="Serie e ano">
+
+            <p>Descubra aquilo que sempre te gerou dúvida.
+                "É uma solução para você que não tem total certeza do ano do seu be mais precioso, sua máquina de trabalho, você que na hora de comercializar tem dificuldade de saber a data exta da frabricação. Temos a solução para o seu problema!"</p>
+        </div>
+        <div class="card">
+            <img src="./imagens/avaliador.png" alt="Avaliador">
+            <p>Qualidade e assertividade - "Tecnologia usada para avaliar de forma eficiente o valor da sua máquina. Útil para o concessionário que precisa receber um usado na venda de um novo, e útil para o produtor que precisa comprar um maquinário novo. Avaliamos o seu maquinário com o devido valor que ele merece!"</p>   
+        </div>
+        <div class="card" id="card3">
+            <div>
+            <img src="./imagens/checklis.png" alt="Checklist" class="img1">
+            <img src="./imagens/checklistBranco.png" alt="Checklist" class="img2">
+            <img src="./imagens/checklistBranco.png" alt="Checklist" class="img3">
+            </div>
+            <p>"Nosso Banco de Dados é o maior e mais completo do Brasil, contendo praticamente todas as marcas e modelos de maquinas agrícolas comercializadas no Brasil."</p>
+        </div>
+        <div class="card"  id="card4">
+            <div>
+                <img src="./imagens/offBranco.png" alt="Checklist" class="img1">
+                <img src="./imagens/off.png" alt="Checklist" class="img2">
+                <img src="./imagens/off.png" alt="Checklist" class="img3">
+            </div>
+            <p>Funciona até onde o sinal não chega - "Na lavoura, conexão nem sempre é garantida. Por isso, o app da TratorBR funciona também offline, permitindo que você registre dados, acompanhe atividades e gerencie sua operação mesmo sem internet. Quando o sinal voltar, tudo se sincroniza automaticamente. Produtividade sem interrupções — com ou sem Wi-Fi."</p>
+        </div>
+    </div>
+</section>
+<!-- FIM RECURSOS -->
+
+<!-- SOBRE NÓS -->
+<section>
+    <div class="container-sobre">
+        <div class="conteudo-sobre" id="sobre">
+            <h2>Quem nós somos?</h2>
+            <p>Na TratorBR, somos movidos pela vontade de fazer diferente. Sabemos dos desafios que agricultores e concessionários enfrentam todos os dias — e foi justamente por isso que criamos uma solução feita por quem entende do campo, para quem vive dele. Mais do que um aplicativo, apresentamos soluções que mostram a realidade: conectamos pessoas, máquinas e oportunidades. Queremos simplificar a rotina, agilizar negócios e abrir novos caminhos para quem sustenta o Brasil com trabalho e dedicação. Estamos aqui para caminhar ao lado de você — com tecnologia, respeito e compromisso com o que realmente importa: o agro.</p>
+
+            <h5 style="font-family: Ethnocentric; font-size: 20px; margin-bottom: -5px; font-weight: normal; margin-top: -1px;">Nosso Objetivo</h5>
+            <p style="margin-top: -15px;">A TratorBR nasceu com um propósito claro: facilitar as negociações tanto para os concessionários quanto para os produtores rurais. Unimos a força do campo à inovação digital, oferecendo uma plataforma prática, segura e pensada para o dia a dia de quem vive e trabalha no agronegócio. Nosso compromisso é com a eficiência, a transparência e o fortalecimento do setor agrícola brasileiro.</p>
+            <img src="./imagens/logoBranca.png" alt="Logo Branca">
+        </div>
+    </div>
+</section>
+<!-- FIM SOBRE NÓS -->
+
+<!-- 2 TIPOS -->
+<section class="section-container-new">
+    <h1 class="section-title">Nosso Público</h1>
+    <div class="cards-container-new">
+        <div class="card-new">
+            <h3>Concessionários</h3>
+            <div style="display:flex; margin-top: 40px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+            <div style="display:flex; margin-top: 10px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+            <div style="display:flex; margin-top: 10px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+            <div style="display:flex; margin-top: 10px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+        </div>
+        <div class="card-new-2">
+            <h3>Agricultor</h3>
+            <div style="display:flex; margin-top: 40px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+            <div style="display:flex; margin-top: 10px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+            <div style="display:flex; margin-top: 10px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+            <div style="display:flex; margin-top: 10px;    align-items: center;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p style="margin-left:15px;">Lorem ipsum</p></div>
+        </div> 
+        </div>
+    </div>
+</section>
+<!-- FIM 2 TIPOS -->
+
+ <!-- CONTATO -->
+ <section id="contato">
+    <div class="fundocontato">
+        <div class="contato">
+            <h3>Contato</h3>
+            <p class="ppcontato">Está com dúvidas, sugestões ou quer saber mais sobre o App TratorBR? <br>Nosso time de especialistas está pronto para te atender.
+            </p>
+            <p>Rua Drongo, 1540 - Sala 1002, Centro, Arapongas, PR, 86.700-145</p>
+            <div class="dale">
+                <a href="https://api.whatsapp.com/send?phone=+5543988135681&text=Olá,%20estou%20interessado%20em%20falar%20com%20você" target="_blank" >
+                <div class="btnwhats">
+                    <img src="./imagens/whatsbranco.png" alt="WhatsApp">
+                    <p><strong>Chamar no WhatsApp</strong></p>
+                </div></a>
+            <a href="https://forms.gle/kCxtnzXMyfG15bvr9"><div class="btnavaliar">Avalie Agora</div></a>
+            </div>
+        </div>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1234567890123!2d-51.4256789!3d-23.4198765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd123456789ab%3A0x123456789abcdef!2sRua%20Drongo%2C%201540%20-%20Sala%201002%2C%20Centro%2C%20Arapongas%20-%20PR%2C%2086700-145!5e0!3m2!1sen!2sbr!4v1697041234567!5m2!1sen!2sbr"
+                 width="100%"
+                height="100%"
+                style="border-radius:30px; "
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"> 
+            </iframe>
+            <!-- API -->
+        </div>
+    </div>
+ </section>
+
+ <!-- APP -->
+ <section class="app-section">
+    <div class="app-left">
+      <h4>TratorBR - APP</h4>
+      <p>Baixe agora e venha viver essa experiência<br>junto com a gente!!!</p>
+      <div class="download-buttons">
+        <a href="#">
+          <img src="./imagens/icons/logotipo-da-apple.png" alt="Apple Icon" style="margin-right:22px"/>
+          Baixar para IOS
+          
+        </a>
+        <a href="#">
+          <img src="./imagens/icons/simbolo-de-personagem-android.png" alt="Android Icon" />
+          Baixar para Android
+        </a>
+      </div>
+    </div>
+
+    <div class="app-middle">
+      <div class="checklist-box">
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Série e Ano</p></div>
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Avaliador</p></div>
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Maior Banco de Dados</p></div>
+        <div style="display:flex;"><img src="./imagens/icons/iconcheck.png" alt="Android Icon" /><p>Online & Offline</p></div>
+      </div>
+      <p>
+        Seja agricultor ou concessionário, o aplicativo TratorBR foi feito para tornar sua rotina mais simples, eficiente e digital. Chega de burocracia: com poucos cliques, você tem o controle que precisa para tomar decisões melhores no agronegócio.
+      </p>
+    </div>
+
+    <div class="app-right">
+      <img src="./imagens/icons/mokoupiphone.png" alt="App Mockup" />
+    </div>
+  </section>
+
+ <!-- FOOTER -->
+<footer>
+    <div class="fundofooter">
+        <div class="linkum"><a href="./politicasdeprivacidade.html">Politicas de privacidade</a></div>
+        <div class="escrito"><p>Copyright © 2025. Todos os direitos reservados para TratorBR.</p></div>
+        <div class="linkdois"><a href="./termosdeuso.html">Termos de uso</a></div>
+    </div>
+</footer>
+
+</body>
+</html>
