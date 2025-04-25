@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('./fontes/Ethnocentric\ Rg.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, h1, p, ul, li {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     
 }
 
@@ -397,7 +404,7 @@ nav ul li a {
     padding-left: 0px;
     margin: 0px;
     color: white;
-    font-family: Ethnocentric;
+    font-family: 'Ethnocentric';
     font-weight: normal;
     font-size: 26px;
     margin-top: 55px;
@@ -420,6 +427,10 @@ nav ul li a {
     width: 100%;
     height: 100%;
     align-items: center;
+}
+.conteudo-sobre h5{
+    font-family: 'Ethnocentric';
+
 }
 
 .conteudo-sobre p{
