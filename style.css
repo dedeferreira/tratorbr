@@ -341,7 +341,7 @@ nav ul li a {
         font-size: 40px;
     }
     .section-title h2{
-        font-size: 28px;
+        font-size: 26px;
     }
     #card3{
         color: white;
@@ -496,7 +496,7 @@ nav ul li a {
     background-image: url('./imagens/1.png');
     align-items: center;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     /* position: relative; */
     color: white;
     padding: 20px;
@@ -507,6 +507,7 @@ nav ul li a {
     /* position: relative; */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
     font-size: 17px;
+    height: 100%;
 }
 .card-new:hover {
     transform: scale(1.05); /* Aumenta o tamanho do card ao passar o mouse */
@@ -522,27 +523,46 @@ nav ul li a {
     background-image: url('./imagens/2.png');
     align-items: center;
     background-size: cover;
-    background-position: center;
-    position: relative;
+    /* background-position: center; */
+    /* position: relative; */
     color: white;
     padding: 20px;
     border-radius: 30px;
     width: 40%;
     text-align: left;
-    height: 250px;
-    position: relative;
+    height: 100%;
+    /* position: relative; */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
     font-size: 17px;
+    text-align: center;
 
+}
+
+.divppp{
+    /* display:flex;  */
+    margin-top: 20px;   
+    align-items: center;
+}
+
+.ppp{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.ppp strong{
+    font-size: 24px;
 }
 @media (max-width: 1200px) {
     .card-new {
         width: 40%;
         height: 240px;
+        height: 100%;
     }
     .card-new-2{
         width: 40%;
         height: 240px;
+        height: 100%;
     }
     .section-title-new {
         font-size: 28px;
@@ -553,17 +573,19 @@ nav ul li a {
     .card-new {
         width: 75%;
         height: 200px;
+        height: 100%;
     }
     .card-new-2{
         width: 75%;
         height: 200px;
+        height: 100%;
     }
     .cards-container-new {
         flex-direction: column;
         align-items: center;
     }
     .section-title-new {
-        font-size: 28px;
+        font-size: 26px;
         font-weight: bold;
         text-align: center;
         padding-left: 0px;
@@ -711,6 +733,7 @@ nav ul li a {
         margin: 0 auto;
         margin-top: -15px;
         margin-bottom: 20px;
+        margin-top: -20px;
     }
     .dale{
         display: block;
